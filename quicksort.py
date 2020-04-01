@@ -24,7 +24,7 @@ def get_pivot(arr, choice='median'):
 
 
 def partition(array, pivot_choice='median'):
-    pivot = get_pivot(array)
+    pivot = get_pivot(array, choice=pivot_choice)
     lt, eq, gt = [], [], []
     for item in array:
         if item < pivot:
